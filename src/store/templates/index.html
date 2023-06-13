@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Moki Duken Home</h1>
+    <p>
+        Добро пожаловать в <em>Моки</em>!
+    </p>
+    <h2>Dynamic content</h2>
+    <p>The catalog has the following record counts:</p>
+    <ul>
+        <li>
+            <strong>Products:</strong> {{ num_products }}
+        </li>
+        <li>
+            <strong>Copies:</strong> {{ num_instances_available }}
+        </li>
+    </ul>
+{% endblock %}
